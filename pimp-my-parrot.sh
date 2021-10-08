@@ -20,26 +20,30 @@ sudo apt install spice-vdagent
 
 ## Install new apps
 echo "[*] Installing new applications"
+echo "[*] Installing requirements for Autorecon"
+sudo apt install seclists curl enum4linux feroxbuster impacket-scripts nbtscan nikto nmap onesixtyone oscanner redis-tools smbclient smbmap snmp sslscan sipvicious tnscmd10g whatweb wkhtmltopdf -y
+echo "[*] Installing Autorecon"
+sudo python3 -m pip install git+https://github.com/Tib3rius/AutoRecon.git
+echo "[*] Installing Searchsploit"
 sudo git clone https://github.com/offensive-security/exploitdb.git /opt/exploitdb
 sudo ln -sf /opt/exploitdb/searchsploit /usr/local/bin/searchsploit
-echo "[*] Searchsploit installed"
+echo "[*] Installing TLDR"
 sudo apt install tldr -y
 tldr -u
-echo "[*] TLDR installed"
+echo "[*] Installing Feroxbuster"
 sudo apt install feroxbuster -y
-echo "[*] ferroxbuster installed"
+echo "[*] Installing Ciphey"
 python3 -m pip install ciphey --upgrade
-echo "[*] Ciphey installed"
+echo "[*] Installing Search-That-Hash"
 pip3 install search-that-hash && sth
-echo "[*] Search-That-Hash installed"
+echo "[*] Installing Rustscan"
 wget https://github.com/RustScan/RustScan/releases/download/2.0.1/rustscan_2.0.1_amd64.deb -O /home/user/Downloads/rustscan_2.0.1_amd64.deb
 sudo dpkg -i $HOME/Downloads/rustscan_2.0.1_amd64.deb
-echo "[*] Rustscan installed"
+echo "[*] Installing ffuf"
 sudo apt install ffuf -y
-echo "[*] ffuf installed"
+echo "[*] Installing Stegseek"
 wget https://github.com/RickdeJager/stegseek/releases
 sudo dpkg -i $HOME/Downloads/stegseek_0.6-1.deb
-echo "[*] Stegseek installed"
 # Remove downloaded deb packages
 rm $HOME/Downloads/*.deb
 # Insatll Mono
