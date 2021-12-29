@@ -5,7 +5,7 @@ Script to customize and install additional tools on a *fresh* install of ParrotS
 1. Install Parrot OS on your VM of choice
 2. Copy `pimp-my-parrot.sh` onto your VM directory (example: $HOME)
 3. chmod +x `pimp-my-parrot.sh`
-4. Run pimp-my-parrot.sh
+4. Run `pimp-my-parrot.sh`
 
 ### Tools Installed
 * FTP
