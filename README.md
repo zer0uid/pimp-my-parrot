@@ -7,4 +7,19 @@ Script to customize and install additional tools on a *fresh* install of ParrotS
 3. chmod +x `pimp-my-parrot.sh`
 4. Run pimp-my-parrot.sh
 
+### Tools Installed
+* FTP
+* MySQL Client
+* Searchsploit
+* tldr
+* Feroxbuster
+* Ciphey
+* Search-That-Hash
+* Rustscan
+* ffuf
+* Stegseek
+* Mono (for use with NetworkMiner)
+* NetworkMiner (pcap analysis)
+* Subfinder
+
 *More details to come later, as this script is currently in Alpha.(
